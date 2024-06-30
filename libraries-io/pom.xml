@@ -53,6 +53,16 @@
             <artifactId>simple-java-mail</artifactId>
             <version>${simplejavamail.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.sshd</groupId>
+            <artifactId>sshd-core</artifactId>
+            <version>${apache-sshd.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.sshd</groupId>
+            <artifactId>sshd-sftp</artifactId>
+            <version>${apache-sshd.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -70,13 +80,14 @@
 
     <properties>
         <!-- sftp -->
-        <jsch.version>0.2.16</jsch.version>
+        <jsch.version>0.2.18</jsch.version>
         <sshj.version>0.38.0</sshj.version>
         <commons-vfs2.version>2.9.0</commons-vfs2.version>
         <zip4j.version>2.11.5</zip4j.version>
         <opencsv.version>5.9</opencsv.version>
         <spring.version>6.1.4</spring.version>
         <simplejavamail.version>8.7.0</simplejavamail.version>
+        <apache-sshd.version>2.13.1</apache-sshd.version>
     </properties>
 
 </project>
